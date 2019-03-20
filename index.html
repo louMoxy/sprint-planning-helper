@@ -1,0 +1,93 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sprint Planning</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="columns" style="min-height: 100vh;">
+      <div class="column is-one-fifth has-background-white-ter">
+        <div class="section">
+            <h1 class="title">Select Project</h1>
+              <div class="field">
+                <div class="control">
+                    <div class="select">
+                    <select id="project">
+                        <option value="http://ecf-oxy-ci01.futures.city:10080/CityScience/exmouth-stats" selected>Cadence</option>
+                        <option value="http://ecf-oxy-ci01.futures.city:10080/CityScience/energy">Energy</option>
+                        <option value="http://ecf-oxy-ci01.futures.city:10080/CityScience/Transport">Transport</option>
+                        <option value="http://ecf-oxy-ci01.futures.city:10080/CityScience/ds-servers">DS Servers</option>
+                        <option value="https://github.com/CityScience/ds-desktop">DS Desktop</option>
+                    </select>
+                    </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                    <input
+                        class="input"
+                        type="text"
+                        id="milestone"
+                        placeholder="Milestone"
+                    />
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="column">
+        <div class="section">
+            <div class="columns">
+              <div class="column">
+                <a href="#" id="board" target="_blank">
+                  <div class="card">
+                      <header class="card-header">
+                          <p class="card-header-title">
+                            Board
+                          </p>
+                      </header>
+                      <div class="card-content">
+                          <img src="board.svg" alt="board">
+                      </div>
+                  </div>
+                </a>
+              </div>
+              <div class="column">
+                <a href="#" id="merge" target="_blank">
+                  <div class="card">
+                      <header class="card-header">
+                          <p class="card-header-title">
+                            Merge Requests
+                          </p>
+                      </header>
+                      <div class="card-content">
+                          <img src="merge.svg" alt="merge">
+                      </div>
+                  </div>
+                </a>
+              </div>
+              <div class="column">
+                  <a href="#" id="allMilestones" target="_blank">
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                              Milestones
+                            </p>
+                        </header>
+                        <div class="card-content">
+                            <img src="milestone.svg" alt="milestone">
+                        </div>
+                    </div>
+                  </a>
+                </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
